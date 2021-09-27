@@ -72,13 +72,13 @@ nav li:not(:last-child) {
     padding-right: 10px;
 }
 
-.icon{
+.icon {
     vertical-align: middle;
     height: 1em;
     padding-right: 5px;
 }
 
-nav a{
+nav a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +88,7 @@ nav a{
     width: fit-content;
 }
 
-nav a:hover{
+nav a:hover {
     filter: invert(1);
 }
 
@@ -127,7 +127,7 @@ nav a:active {
     height: 200px;
 }
 
-#scrollbar{
+#scrollbar {
     grid-row: 4;
     grid-column: 2;
     display: flex;
@@ -162,37 +162,6 @@ footer {
     align-items: center;
     padding: 0 2%;
     height: auto;
-}
-
-@media (max-width: 800px) {
-    nav ul{
-        flex-direction: column;
-    }
-    #scrollbar ul{
-        flex-direction: column;
-    }
-    .intro-section {
-        flex-direction: column;
-        grid-column: 1 / -1;
-        margin-top: 20px;
-        padding: 5%;
-    }
-    #text-content {
-        font-size: 1em;
-    }
-    #profile-pic {
-        box-sizing: border-box;
-        width: 80%;
-        height: auto;
-        margin: 10%;
-    }
-    footer{
-        flex-direction: column;
-        padding-bottom: 10px;
-    }
-    #contact-form {
-        width: 80%
-    }
 }
 
 #contact-list ul {
@@ -239,10 +208,97 @@ footer {
     width: 100%;
 }
 
-#download-link{
+#download-link {
     text-decoration: none;
-    border: black 1px solid;
-    padding: 5px;
-    margin: 5px;
+    text-align: center;
+    border: #000000 1px solid;
+    margin: 10px;
+    box-sizing: border-box;
 }
 
+#download-link:hover {
+    filter: invert(1);
+}
+
+.resume-section {
+    grid-column: 2;
+    grid-row: 3;
+    padding: 50px 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    column-gap: 30px;
+    display: flex;
+    position: relative;
+    line-height: 1.6em;
+}
+
+#resume-left {
+    width: 30%;
+    font-size: 1.1em;
+}
+
+#resume-right {
+    width: 70%;
+    font-size: 1.1em;
+}
+
+#resume-right h1 {
+    height: auto;
+    font-weight: bold;
+    margin: 0;
+    font-size: 40px;
+    box-sizing: border-box;
+}
+
+#resume-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#line {
+    color: black;
+}
+
+#name {
+    height: 40px;
+}
+
+@media (max-width: 800px) {
+    nav ul {
+        flex-direction: column;
+    }
+    #scrollbar ul {
+        flex-direction: column;
+    }
+    .intro-section {
+        flex-direction: column;
+        grid-column: 1 / -1;
+        margin-top: 20px;
+        padding: 5%;
+    }
+    #text-content {
+        font-size: 1em;
+    }
+    #profile-pic {
+        box-sizing: border-box;
+        width: 80%;
+        height: auto;
+        margin: 10%;
+    }
+    footer {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    #contact-form {
+        width: 80%
+    }
+    .resume-section {
+        flex-direction: column-reverse;
+    }
+    #resume-right {
+        width: 100%;
+    }
+    #resume-left {
+        width: 100%;
+    }
+}
