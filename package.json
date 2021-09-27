@@ -1,0 +1,24 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roryhofland/personal-website.git"
+  },
+  "author": "Rory Hofland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roryhofland/personal-website/issues"
+  },
+  "homepage": "https://github.com/roryhofland/personal-website#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
