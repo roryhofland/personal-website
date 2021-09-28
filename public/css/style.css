@@ -263,6 +263,26 @@ footer {
     height: 40px;
 }
 
+.resume-div {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+.text-part {
+    width: 70%;
+}
+
+.image-part {
+    width: 30%;
+    position: relative;
+}
+
+#uoft-logo {
+    width: 80%;
+    padding: 20.6px;
+}
+
 @media (max-width: 800px) {
     nav ul {
         flex-direction: column;
