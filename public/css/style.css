@@ -133,7 +133,8 @@ nav a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000000
+    color: #000000;
+    margin-bottom: 20px;
 }
 
 #scrollbar ul {
@@ -155,13 +156,20 @@ nav a:active {
 }
 
 footer {
-    grid-row: -1;
-    grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2%;
     height: auto;
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    background-color: white;
+    border-top: 1px black solid;
+}
+
+footer div {
+    padding: 0 5%;
 }
 
 #contact-list ul {
@@ -264,7 +272,7 @@ footer {
 
 #resume-left ul {
     list-style: none;
-    padding: 0;
+    padding: 0 0 20px 0;
     margin: 0;
 }
 
@@ -317,6 +325,7 @@ footer {
 .skills li {
     display: inline;
     text-align: center;
+    align-items: center;
     width: 100%;
 }
 
@@ -334,6 +343,39 @@ footer {
     transition: all 0.25s;
     transform: scale(1.2);
     color: #000000;
+}
+
+.project-section {
+    grid-column: 2;
+    grid-row: 3;
+    padding: 50px 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    column-gap: 30px;
+    display: flex;
+    position: relative;
+    line-height: 1.6em;
+}
+
+#project-content {
+    font-size: 1.1em;
+    width: 100%;
+}
+
+#project-content h1 {
+    margin: 0;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+#project-content p {
+    line-height: 1.6em;
+}
+
+.project {
+    margin: 20px 0;
+    border: 1px #000000 solid;
+    width: 100%;
+    height: 100px;
 }
 
 @media (max-width: 800px) {
@@ -366,12 +408,20 @@ footer {
         width: 80%
     }
     .resume-section {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        grid-column: 1/-1;
     }
     #resume-right {
         width: 100%;
     }
     #resume-left {
         width: 100%;
+    }
+    .skills ul {
+        flex-direction: column;
+    }
+
+    .skill img {
+        max-width: 100%;
     }
 }
