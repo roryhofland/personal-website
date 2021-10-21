@@ -162,14 +162,19 @@ footer {
     padding: 0 2%;
     height: auto;
     width: 100%;
-    position:fixed;
+    position: fixed;
     bottom: 0;
-    background-color: white;
+    background-color: #f2f2f2;
     border-top: 1px black solid;
+    opacity: .9;
 }
 
 footer div {
     padding: 0 5%;
+}
+
+footer p {
+    margin: 8px;
 }
 
 #contact-list ul {
@@ -311,7 +316,9 @@ footer div {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000000
+    color: #000000;
+    position: relative;
+    height: fit-content;
 }
 
 .skills ul {
@@ -323,20 +330,23 @@ footer div {
 }
 
 .skills li {
-    display: inline;
+    display: flex;
     text-align: center;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    width: 25%;
 }
 
 .skill {
     transition: all 0.25s;
     color: white;
     height: auto;
+    padding: 0;
+    margin: 0 15%;
 }
 
 .skill img {
-    height: 100px;
+    width: 100%;
 }
 
 .skill:hover {
@@ -367,15 +377,35 @@ footer div {
     font-size: 30px;
 }
 
-#project-content p {
-    line-height: 1.6em;
+#project-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .project {
-    margin: 20px 0;
-    border: 1px #000000 solid;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px white solid;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     width: 100%;
-    height: 100px;
+    height: auto
+}
+
+.project h2 {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.project p {
+    line-height: normal;
+    margin: 0;
+    width: 40%;
 }
 
 @media (max-width: 800px) {
@@ -420,7 +450,6 @@ footer div {
     .skills ul {
         flex-direction: column;
     }
-
     .skill img {
         max-width: 100%;
     }
