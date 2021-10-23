@@ -384,15 +384,18 @@ footer p {
 }
 
 .project {
+    display: flex;
+    justify-content: space-between;
     position: relative;
     box-sizing: border-box;
     margin-top: 20px;
     padding: 20px;
-    border: 1px white solid;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     width: 100%;
-    height: auto
+    height: auto;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: #fafafa;
+
 }
 
 .project h2 {
@@ -405,7 +408,33 @@ footer p {
 .project p {
     line-height: normal;
     margin: 0;
-    width: 40%;
+    width: 80%;
+}
+
+.project img {
+    height: 300px;
+    padding: 20px;
+}
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
 }
 
 @media (max-width: 800px) {
