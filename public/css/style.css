@@ -124,7 +124,7 @@ nav a:active {
     margin: 18px 0 3% 3%;
     float: right;
     width: auto;
-    height: 200px;
+    height: 250px;
 }
 
 #scrollbar {
@@ -142,17 +142,29 @@ nav a:active {
     margin: 30px 0;
     padding: 10px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #scrollbar li {
     display: inline;
     text-align: center;
-    width: 100%;
+    background-color: #fafafa;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+#scrollbar li:hover {
+    transition: all 0.25s;
+    background-color: #f2f2f2;
+}
+
+#scrollbar a {
+    text-decoration: none;
 }
 
 .thumbnail {
     height: 100px;
+    margin-bottom: 5px;
 }
 
 footer {
@@ -343,6 +355,7 @@ footer p {
     height: auto;
     padding: 0;
     margin: 0 15%;
+    margin-bottom: 5px;
 }
 
 .skill img {
@@ -351,7 +364,7 @@ footer p {
 
 .skill:hover {
     transition: all 0.25s;
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: #000000;
 }
 
