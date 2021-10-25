@@ -2,7 +2,10 @@ const express = require("express");
 const path = require("path");
 
 const server = express();
-const port = 3000;
+const port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
 
 //Middleware
 server.set("views", path.join(__dirname, "views"));
