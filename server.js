@@ -35,6 +35,6 @@ server.post("/send", (req, res) => {
     res.json({ message: "Message received."})
 })
 
-server.listen(port, () => {
+server.listen(process.env.PORT, () => {
     console.log(`Server is listening on port ${port}`)
 });

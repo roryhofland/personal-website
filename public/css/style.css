@@ -174,11 +174,8 @@ footer {
     padding: 0 2%;
     height: auto;
     width: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    background-color: #f2f2f2;
-    border-top: 1px black solid;
-    opacity: .9;
 }
 
 footer div {
@@ -267,6 +264,7 @@ footer p {
     display: flex;
     position: relative;
     line-height: 1.6em;
+    margin-bottom: 50px;
 }
 
 #resume-left {
