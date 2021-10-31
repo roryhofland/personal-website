@@ -410,6 +410,10 @@ footer p {
 
 }
 
+.parag {
+    width: 60%;
+}
+
 .project h2 {
     font-weight: normal;
     font-size: 20px;
@@ -425,7 +429,8 @@ footer p {
 
 .project img {
     height: 300px;
-    padding: 20px;
+    margin: 20px;
+    border: 2px #aaa solid;
 }
 
 details {
@@ -447,6 +452,15 @@ details[open] {
 details[open] summary {
     border-bottom: 1px solid #aaa;
     margin-bottom: .5em;
+}
+
+@media (max-width: 1600px) {
+    .project {
+        flex-direction: column;
+    }
+    .parag {
+        width: auto;
+    }
 }
 
 @media (max-width: 800px) {
